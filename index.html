@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="style.css">
+    
+      <script>
+        function userinfo() {
+
+            var name = document.getElementById("Uname").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var address = document.getElementById("address").value;
+            var dateofbirth = document.getElementById("DOB").value;
+
+            // document.writeln( "You have filled following details  : <br>" + "name:"+name +"<br");
+            // document.writeln("your email : <br>"+email+"<br>");
+            // document.writeln("your password: <br>"+password+"<br>");
+            // document.writeln("you have entered your address as: <br>"+address+"<br>");
+            // document.writeln("your DOB is: <br>"+dateofbirth+"<br>");
+            alert("Thankyou for submitting your response", "success")
+            alert("Details you have filled are following :"+ "\n" +" user name :"+ "  " +name + "\n" +  " your email :"+ "  " + email + "\n" + "your password :"+ "  " + password + "\n" + " address :"+ "  " + address + "\n" +" your dob :"+ "  " + dateofbirth + "           "     )
+        }
+       
+        
+       
+        
+    </script>
+</head>
+<body>
+<div class="container"></div>    
+<div class="form-box">
+    <h1>Sign up</h1>
+    <form onsubmit="userinfo()">
+        <div class="input-group">
+            <div class="input-field">
+                
+                <input type="text "  id="Uname" placeholder="Username" required>
+            </div>
+
+            <div class="input-field">
+                
+                <input type="Email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-field">
+                
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+
+            <div class="input-field">
+                
+                <input type="Address" id="address" placeholder="Address" required>
+            </div>
+            
+            <div class="input-field">
+                
+                <input type="date" id="DOB" placeholder="Date of birth" max="2022-02-16" required>
+                <label for="date">DOB</label>
+                <br>
+                
+            </div>
+        </div>
+        <div class="btn-field">
+            <button  type="submit" value="sign-up">Sign up</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+</body>
+</html>  
